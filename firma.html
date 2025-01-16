@@ -1,0 +1,96 @@
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+<script>
+  function guardarDatos() {
+    // Obtener valores de los campos
+    const nombre = document.getElementById('nombre').value.trim();
+    const cargo = document.getElementById('cargo').value.trim();
+    const telefono = document.getElementById('telefono').value.trim();
+    const correo = document.getElementById('correo').value.trim();
+
+    // Verificar si todos los campos están llenos
+    if (nombre && cargo && telefono && correo) {
+      // Actualizar los datos en la tabla
+      document.getElementById('nombreTabla').textContent = nombre;
+      document.getElementById('cargoTabla').textContent = cargo;
+      document.getElementById('telefonoTabla').textContent = telefono;
+      document.getElementById('correoTabla').textContent = correo;
+
+      alert('Datos guardados correctamente.');
+    } else {
+      alert('Por favor, llena todos los campos antes de guardar.');
+    }
+  }
+</script>
+
+<table cellspacing="0" cellpadding="0" border="0" style="width: 600px; font-family: 'DM Sans', sans-serif; border-collapse: collapse;">
+    <tr>
+      <!-- Logo and Brand -->
+      <td style="width: 35%; text-align: center; vertical-align: middle; padding: 22px;">
+        <img src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043098/logo_lra32z.png" alt="Logo" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+      </td>
+  
+      <!-- Contact Information -->
+      <td style="width: 70%; border-left: 1px solid #000000; padding-left: 20px; vertical-align: middle;">
+        <p id="nombreTabla" style="font-size: 34px; font-weight: semibold; margin: 0; color: #333;font-family: 'Bricolage Grotesque', sans-serif; ">JSJSJKSK</p>
+        <p id="cargoTabla" style="font-size: 24px; color: #666; margin: 5px 0;">Auxiliar legal</p>
+  
+          <div style="display: flex; align-items: center;">
+            <img src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043097/phone_fyc8qa.png" alt="Phone" style="width: 20px; height: 20px; margin-right: 8px;">
+            <span id="telefonoTabla" style="font-size: 16px; color: #333;">+57 3012069801</span>
+          </div>
+  
+          <div style="display: flex; align-items: center;">
+            <img src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043097/mail_d2p2nb.png" alt="Email" style="width: 20px; height: 20px; margin-right: 8px;">
+            <span id="correoTabla" style="font-size: 16px; color: #333;">auxlegal@colurs.io</span>
+          </div>
+
+          <div style="display: flex; align-items: center;">
+            <img src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043097/colurs_ico_wqxq2x.png" alt="Website" style="width: 20px; height: 20px; margin-right: 8px;">
+            <a href="https://www.colurs.io"  style="text-decoration: none;" ><span style="font-size: 16px; color: #333;">colurs.io</span></a>
+          </div>
+   
+        <!-- Social Media -->
+        <div style="margin-top: 15px; display: flex;">
+          <a href="https://www.instagram.com/colurs.io/">
+            <img src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043097/instagram_fvkofy.png" alt="Instagram" style="width: 24px; height: 24px;margin-right: 10px;">
+          </a>
+          <a href="https://www.linkedin.com/company/colurs/posts/?feedView=all">
+            <img src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043097/linkedin_ixaeex.png" alt="LinkedIn" style="width: 24px; height: 24px; margin-right: 10px;">
+          </a>
+          <a href="https://wa.me/3011729991">
+            <img src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043098/whatsapp_hduyzz.png" alt="WhatsApp" style="width: 24px; height: 24px;margin-right: 10px;">
+          </a>
+        </div>
+      </td>
+    </tr>
+  </table>
+  
+
+
+
+
+
+
+<div style="display: flex; flex:1; background-color: rgb(141, 163, 163); width: 30vh; height: auto; margin-top: 300px; justify-content: center; padding: 10px; flex-direction: column; " >
+
+
+    <h2 style="text-align: center;font-family: 'Bricolage Grotesque', sans-serif; color: white; ">Captura de Datos</h2>
+
+    <label for="nombre" style="display: block; margin-bottom: 5px;font-family: 'Bricolage Grotesque', sans-serif; color: white;">Nombre:</label>
+    <input type="text" id="nombre" placeholder="Ingresa tu nombre" style="width: 100%; margin-bottom: 15px; padding: 8px;">
+
+    <label for="cargo" style="display: block; margin-bottom: 5px;font-family: 'Bricolage Grotesque', sans-serif; color: white;">Cargo:</label>
+    <input type="text" id="cargo" placeholder="Ingresa tu cargo" style="width: 100%; margin-bottom: 15px; padding: 8px;">
+
+    <label for="telefono" style="display: block; margin-bottom: 5px;font-family: 'Bricolage Grotesque', sans-serif; color: white;">Número de Teléfono:</label>
+    <input type="text" id="telefono" placeholder="Ingresa tu teléfono" style="width: 100%; margin-bottom: 15px; padding: 8px;">
+
+    <label for="correo" style="display: block; margin-bottom: 5px;font-family: 'Bricolage Grotesque', sans-serif; color: white;">Correo Electrónico:</label>
+    <input type="email" id="correo" placeholder="Ingresa tu correo" style="width: 100%; margin-bottom: 15px; padding: 8px;">
+
+    <button onclick="guardarDatos()" style="width: 100%; padding: 10px; background-color: #35a070; color: white; border: none; cursor: pointer;">Cambiar Datos</button>
+</div>
+
+
+
+
