@@ -1,4 +1,14 @@
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+<!-- Google Fonts: Bai Jamjuree + Inter (alternativa a SF Pro Display) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+  rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+  rel="stylesheet">
 <script>
   function guardarDatos() {
     // Obtener valores de los campos
@@ -22,169 +32,146 @@
   }
   const prefersDarkScheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-// Cambiar imágenes y estilos dependiendo del modo
-if (prefersDarkScheme) {
-  // Cambiar las imágenes para modo oscuro
-  document.getElementById('logo').src = 'https://res.cloudinary.com/dwthzuigt/image/upload/v1737402509/klvdpgw2vchlgnfy7duh.png';
-  document.getElementById('phoneIcon').src = 'https://res.cloudinary.com/dwthzuigt/image/upload/v1737402509/kozmjwtltdk6afriu8jo.png';
-  document.getElementById('emailIcon').src = 'https://res.cloudinary.com/dwthzuigt/image/upload/v1737402509/iwtdhmpyn5txinzimnhe.png';
-  document.getElementById('websiteIcon').src = 'https://res.cloudinary.com/dwthzuigt/image/upload/v1737402509/vmua2bxb4jr0c7eydt0e.png';
-  document.getElementById('instagramIcon').src = 'https://res.cloudinary.com/dwthzuigt/image/upload/v1737402509/g29rnfsxqtvbbbuet8jg.png';
-  document.getElementById('linkedinIcon').src = 'https://res.cloudinary.com/dwthzuigt/image/upload/v1737402509/jnfq6uzpbn0n0pipsjmi.svg';
-  document.getElementById('whatsappIcon').src = 'https://res.cloudinary.com/dwthzuigt/image/upload/v1737402509/syqy5dvgd7qmmloc2e5a.svg';
+  // Cambiar imágenes y estilos dependiendo del modo
+  if (prefersDarkScheme) {
+    // Cambiar las imágenes para modo oscuro
+    document.getElementById('logo').src = 'https://res.cloudinary.com/dwthzuigt/image/upload/v1737402509/klvdpgw2vchlgnfy7duh.png';
+    document.getElementById('phoneIcon').src = 'https://res.cloudinary.com/dwthzuigt/image/upload/v1737402509/kozmjwtltdk6afriu8jo.png';
+    document.getElementById('emailIcon').src = 'https://res.cloudinary.com/dwthzuigt/image/upload/v1737402509/iwtdhmpyn5txinzimnhe.png';
+    document.getElementById('websiteIcon').src = 'https://res.cloudinary.com/dwthzuigt/image/upload/v1737402509/vmua2bxb4jr0c7eydt0e.png';
+    document.getElementById('instagramIcon').src = 'https://res.cloudinary.com/dwthzuigt/image/upload/v1737402509/g29rnfsxqtvbbbuet8jg.png';
+    document.getElementById('linkedinIcon').src = 'https://res.cloudinary.com/dwthzuigt/image/upload/v1737402509/jnfq6uzpbn0n0pipsjmi.svg';
+    document.getElementById('whatsappIcon').src = 'https://res.cloudinary.com/dwthzuigt/image/upload/v1737402509/syqy5dvgd7qmmloc2e5a.svg';
 
-  // Cambiar colores de texto y fondo
-  document.getElementById('logoCell').style.backgroundColor = '#000';
-  document.getElementById('contactCell').style.backgroundColor = '#333';
-  document.getElementById('nombreTabla').style.color = '#fff';
-  document.getElementById('cargoTabla').style.color = '#ccc';
-  document.getElementById('telefonoTabla').style.color = '#fff';
-  document.getElementById('correoTabla').style.color = '#fff';
-  document.getElementById('websiteIcon').style.filter = 'invert(1)';
-}
+    // Cambiar colores de texto y fondo
+    document.getElementById('logoCell').style.backgroundColor = '#000';
+    document.getElementById('contactCell').style.backgroundColor = '#333';
+    document.getElementById('nombreTabla').style.color = '#fff';
+    document.getElementById('cargoTabla').style.color = '#ccc';
+    document.getElementById('telefonoTabla').style.color = '#fff';
+    document.getElementById('correoTabla').style.color = '#fff';
+    document.getElementById('websiteIcon').style.filter = 'invert(1)';
+  }
 </script>
 
-<!-- <table cellspacing="0" cellpadding="0" border="0" style="width: 600px; font-family: 'DM Sans', sans-serif; border-collapse: collapse;">
-    <tr>
+<table cellspacing="0" cellpadding="0" border="0"
+  style="width: 600px; font-family: 'DM Sans', sans-serif; border-collapse: collapse;">
+  <tr style="background-color: rgb(255, 255, 255); padding: 20px;">
+    <!-- Logo and Brand -->
+    <td id="logoCell"
+      style="width: 40%; text-align: center; vertical-align: middle; padding-left: 20px; padding-right: 20px;">
+      <img id="logo" src="https://res.cloudinary.com/dwthzuigt/image/upload/v1767736883/logo_colurs_kmdvce.svg"
+        alt="Logo" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    </td>
 
-      <td style="width: 30%; text-align: center; vertical-align: middle; padding: 30px;">
-        <img src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043098/logo_lra32z.png" alt="Logo" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-      </td>
+    <!-- Contact Information -->
+    <td id="contactCell"
+      style="width: 70%; border-left: 1px solid #000000; padding-left: 30px; vertical-align: middle;background-color: rgb(255, 255, 255); padding: 20px; height: 80%;">
+      <p id="nombreTabla"
+        style="font-size: 28px; font-weight: 600; margin: 0; font-family: 'Bai Jamjuree', sans-serif; color: #13131A;">
+        Nombre Ejemplo
+      </p>
+      <p id="cargoTabla" style="font-size: 16px; margin: 0px 0; color: #13131A;font-family: 'Inter', sans-serif;">
+        Cargo Ejemplo
+      </p>
 
+      <div style="display: flex; align-items: center; margin-top: 24px; margin-bottom: 4px;">
+        <img id="phoneIcon" src="https://res.cloudinary.com/dwthzuigt/image/upload/v1767736884/phone_opgj2t.png"
+          alt="Phone" style="width: 20px; height: 20px; margin-right: 8px;">
+        <span id="telefonoTabla" style="font-size: 16px; color: #13131A;font-family: 'Inter', sans-serif;">
+          +57 3012069801
+        </span>
+      </div>
 
-      <td style="width: 70%; border-left: 1px solid #000000; padding-left: 20px; vertical-align: middle;">
-        <p id="nombreTabla" style="font-size: 28px; font-weight: semibold; margin: 0; color: #333;font-family: 'Bricolage Grotesque', sans-serif; ">Nombre Ejemplo</p>
-        <p id="cargoTabla" style="font-size: 16px; color: #666; margin: 0px 0;">Cargo Ejemplo</p>
-  
-          <div style="display: flex; align-items: center; margin-top: 24px; margin-bottom: 4px; ">
-            <img src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043097/phone_fyc8qa.png" alt="Phone" style="width: 16px; height: 16px; margin-right: 8px;">
-            <span id="telefonoTabla" style="font-size: 12px; color: #333; ">+57 3012069801</span>
-          </div>
-  
-          <div style="display: flex; align-items: center;margin-bottom: 4px;">
-            <img src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043097/mail_d2p2nb.png" alt="Email" style="width: 16px; height: 16px; margin-right: 8px;">
-            <span id="correoTabla" style="font-size: 12px; color: #333;">ejemplo@colurs.io</span>
-          </div>
+      <div style="display: flex; align-items: center; margin-bottom: 4px;">
+        <img id="emailIcon" src="https://res.cloudinary.com/dwthzuigt/image/upload/v1767736883/mail_emqnir.png" alt="Email" style="width: 20px; height: 20px; margin-right: 8px;">
+        <span id="correoTabla" style="font-size: 16px; color: #13131A;font-family: 'Inter', sans-serif;">
+          ejemplo@colurs.io
+        </span>
+      </div>
 
-          <div style="display: flex; align-items: center;margin-bottom: 24px;">
-            <img src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043097/colurs_ico_wqxq2x.png" alt="Website" style="width: 15px; height: 15px; margin-right: 9px;">
-            <a href="https://www.colurs.io"  style="text-decoration: none;" ><span style="font-size: 12px; color: #333;">colurs.io</span></a>
-          </div>
-   
-        <div style="margin-top: 15px; display: flex; ">
-          <a href="https://www.instagram.com/colurs.io/">
-            <img src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043097/instagram_fvkofy.png" alt="Instagram" style="width: 18px; height: 18px;margin-right: 10px;">
-          </a>
-          <a href="https://www.linkedin.com/company/colurs/posts/?feedView=all">
-            <img src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043097/linkedin_ixaeex.png" alt="LinkedIn" style="width: 18px; height: 18px; margin-right: 10px;">
-          </a>
-          <a href="https://wa.me/3011729991">
-            <img src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043098/whatsapp_hduyzz.png" alt="WhatsApp" style="width: 18px; height: 18px;margin-right: 10px;">
-          </a>
-        </div>
-      </td>
-    </tr>
-  </table> -->
+      <div style="display: flex; align-items: center; margin-bottom: 24px;">
+        <img id="websiteIcon" src="https://res.cloudinary.com/dwthzuigt/image/upload/v1767736883/Logo_colurs_x4xbf6.png"
+          alt="Website" style="width: 20px; height: 20px; margin-right: 9px;">
+        <a href="https://www.colurs.io" style="text-decoration: none; font-size: 16px; color: #13131A;font-family: 'Inter', sans-serif;">
+          colurs.io
+        </a>
+      </div>
 
-
-  <table cellspacing="0" cellpadding="0" border="0" style="width: 600px; font-family: 'DM Sans', sans-serif; border-collapse: collapse;">
-    <tr style="background-color: rgb(255, 255, 255); padding: 20px;" >
-      <!-- Logo and Brand -->
-      <td id="logoCell" style="width: 30%; text-align: center; vertical-align: middle; padding: 30px;">
-        <img id="logo" src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043098/logo_lra32z.png" alt="Logo" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-      </td>
-  
-      <!-- Contact Information -->
-      <td id="contactCell" style="width: 70%; border-left: 1px solid #000000; padding-left: 20px; vertical-align: middle;background-color: rgb(255, 255, 255); padding: 20px;">
-        <p id="nombreTabla" style="font-size: 28px; font-weight: semibold; margin: 0; font-family: 'Bricolage Grotesque', sans-serif; color: #333;">
-          Nombre Ejemplo
-        </p>
-        <p id="cargoTabla" style="font-size: 16px; margin: 0px 0; color: #666;">
-          Cargo Ejemplo
-        </p>
-  
-        <div style="display: flex; align-items: center; margin-top: 24px; margin-bottom: 4px;">
-          <img id="phoneIcon" src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043097/phone_fyc8qa.png" alt="Phone" style="width: 16px; height: 16px; margin-right: 8px;">
-          <span id="telefonoTabla" style="font-size: 12px; color: #333;">
-            +57 3012069801
-          </span>
-        </div>
-  
-        <div style="display: flex; align-items: center; margin-bottom: 4px;">
-          <img id="emailIcon" src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043097/mail_d2p2nb.png" alt="Email" style="width: 16px; height: 16px; margin-right: 8px;">
-          <span id="correoTabla" style="font-size: 12px; color: #333;">
-            ejemplo@colurs.io
-          </span>
-        </div>
-  
-        <div style="display: flex; align-items: center; margin-bottom: 24px;">
-          <img id="websiteIcon" src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043097/colurs_ico_wqxq2x.png" alt="Website" style="width: 15px; height: 15px; margin-right: 9px;">
-          <a href="https://www.colurs.io" style="text-decoration: none; font-size: 12px; color: #333;">
-            colurs.io
-          </a>
-        </div>
-  
-        <!-- Social Media -->
-        <div style="margin-top: 15px; display: flex;">
-          <a href="https://www.instagram.com/colurs.io/">
-            <img id="instagramIcon" src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043097/instagram_fvkofy.png" alt="Instagram" style="width: 18px; height: 18px;margin-right: 10px;">
-          </a>
-          <a href="https://www.linkedin.com/company/colurs/posts/?feedView=all">
-            <img id="linkedinIcon" src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043097/linkedin_ixaeex.png" alt="LinkedIn" style="width: 18px; height: 18px; margin-right: 10px;">
-          </a>
-          <a href="https://wa.me/3011729991">
-            <img id="whatsappIcon" src="https://res.cloudinary.com/dwthzuigt/image/upload/v1737043098/whatsapp_hduyzz.png" alt="WhatsApp" style="width: 18px; height: 18px;margin-right: 10px;">
-          </a>
-        </div>
-      </td>
-    </tr>
-  </table>
-  
+      <!-- Social Media -->
+      <div style="margin-top: 15px; display: flex;">
+        <a href="https://www.instagram.com/colurs.io/" target="_blank">
+          <img id="instagramIcon" src="https://res.cloudinary.com/dwthzuigt/image/upload/v1767736883/Instagram_ndznym.png" alt="Instagram"
+            style="width: 20px; height: 20px;margin-right: 10px;">
+        </a>
+        <a href="https://www.linkedin.com/company/colurs/posts/?feedView=all" target="_blank">
+          <img id="linkedinIcon" src="https://res.cloudinary.com/dwthzuigt/image/upload/v1767736883/Linkedin_jne9ox.png" alt="LinkedIn"
+            style="width: 20px; height: 20px; margin-right: 10px;">
+        </a>
+        <a href="https://wa.me/3246884526" target="_blank">
+          <img id="whatsappIcon" src="https://res.cloudinary.com/dwthzuigt/image/upload/v1767736884/whatsapp_qgjqvk.png"
+            alt="WhatsApp" style="width: 20px; height: 20px;margin-right: 10px;">
+        </a>
+      </div>
+    </td>
+  </tr>
+</table>
 
 
 
 
-<div style="flex-direction: row; display: flex; gap:20px;  width: 96%;margin-top: 200px; padding: 25px;" >
+
+<div style="flex-direction: row; display: flex; gap:20px;  width: 96%;margin-top: 200px; padding: 25px;">
 
 
-<div style="display: flex; background-color: rgb(141, 163, 163); width: 25%; height: auto;  justify-content: center; padding: 10px; flex-direction: column;border-radius: 10px;  " >
+  <div
+    style="display: flex; background-color: #13131A99; width: 25%; height: auto;  justify-content: center; padding: 10px; flex-direction: column;border-radius: 10px;  ">
 
 
-    <h2 style="text-align: center;font-family: 'Bricolage Grotesque', sans-serif; color: white; ">Captura de Datos</h2>
+    <h2 style="text-align: center;font-family: 'Bai Jamjuree', sans-serif; color: white; ">Captura de Datos</h2>
 
-    <label for="nombre" style="display: block; margin-bottom: 5px;font-family: 'Bricolage Grotesque', sans-serif; color: white;">Nombre:</label>
-    <input type="text" id="nombre" placeholder="Ingresa tu nombre" style="width: 100%; margin-bottom: 15px; padding: 8px;border-radius: 10px; ">
+    <label for="nombre"
+      style="display: block; margin-bottom: 5px;font-family: 'Bai Jamjuree', sans-serif; color: white;">Nombre:</label>
+    <input type="text" id="nombre" placeholder="Ingresa tu nombre"
+      style="width: 100%; margin-bottom: 15px; padding: 8px;border-radius: 10px; ">
 
-    <label for="cargo" style="display: block; margin-bottom: 5px;font-family: 'Bricolage Grotesque', sans-serif; color: white;">Cargo:</label>
-    <input type="text" id="cargo" placeholder="Ingresa tu cargo" style="width: 100%; margin-bottom: 15px; padding: 8px;border-radius: 10px; ">
+    <label for="cargo"
+      style="display: block; margin-bottom: 5px;font-family: 'Bai Jamjuree', sans-serif; color: white;">Cargo:</label>
+    <input type="text" id="cargo" placeholder="Ingresa tu cargo"
+      style="width: 100%; margin-bottom: 15px; padding: 8px;border-radius: 10px; ">
 
-    <label for="telefono" style="display: block; margin-bottom: 5px;font-family: 'Bricolage Grotesque', sans-serif; color: white;">Número de Teléfono:</label>
-    <input type="text" id="telefono" placeholder="Ingresa tu teléfono" style="width: 100%; margin-bottom: 15px; padding: 8px;border-radius: 10px; ">
+    <label for="telefono"
+      style="display: block; margin-bottom: 5px;font-family: 'Bai Jamjuree', sans-serif; color: white;">Número de
+      Teléfono:</label>
+    <input type="text" id="telefono" placeholder="Ingresa tu teléfono"
+      style="width: 100%; margin-bottom: 15px; padding: 8px;border-radius: 10px; ">
 
-    <label for="correo" style="display: block; margin-bottom: 5px;font-family: 'Bricolage Grotesque', sans-serif; color: white;">Correo Electrónico:</label>
-    <input type="email" id="correo" placeholder="Ingresa tu correo" style="width: 100%; margin-bottom: 15px; padding: 8px;border-radius: 10px; ">
+    <label for="correo"
+      style="display: block; margin-bottom: 5px;font-family: 'Bai Jamjuree', sans-serif; color: white;">Correo
+      Electrónico:</label>
+    <input type="email" id="correo" placeholder="Ingresa tu correo"
+      style="width: 100%; margin-bottom: 15px; padding: 8px;border-radius: 10px; ">
 
-    <button onclick="guardarDatos()" style="width: 100%; padding: 10px; background-color: #508ba3; color: white; border: none; cursor: pointer;border-radius: 10px; ">Cambiar Datos</button>
-</div>
-<div style="display: flex; background-color: rgb(141, 163, 163); width: 75%; height: auto;  justify-content: center; padding: 10px; flex-direction: column;border-radius: 10px;  " >
+    <button onclick="guardarDatos()"
+      style="width: 100%; padding: 10px; background-color: #13131A; color: white; border: none; cursor: pointer;border-radius: 10px; ">Cambiar
+      Datos</button>
+  </div>
+  <div
+    style="display: flex; background-color: #13131A; width: 75%; height: auto;  justify-content: center; padding: 10px; flex-direction: column;border-radius: 10px;  ">
 
 
-  <h2 style="text-align: center;font-family: 'Bricolage Grotesque', sans-serif; color: white; ">Tutorial de creación de la firma Colurs</h2>
-  <iframe 
-  width="760" 
-  height="515" 
-  src="https://www.youtube.com/embed/O3JL1vXGX4g" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-  allowfullscreen 
-  style="align-self: center; margin: 10px 0; border-radius: 10px;">
-</iframe>
-  <a href="https://youtu.be/O3JL1vXGX4g" target="_blank" style="text-decoration: none;"  ><p style="text-align: center;font-family: 'Bricolage Grotesque', sans-serif; color: rgb(255, 255, 255); " >link Video Tutorial</p></a>
-  
+    <h2 style="text-align: center;font-family: 'Bai Jamjuree', sans-serif; color: white; ">Tutorial de creación
+      de la firma Colurs</h2>
+    <iframe width="760" height="515" src="https://www.youtube.com/embed/O3JL1vXGX4g" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen style="align-self: center; margin: 10px 0; border-radius: 10px;">
+    </iframe>
+    <a href="https://youtu.be/O3JL1vXGX4g" target="_blank" style="text-decoration: none;">
+      <p style="text-align: center;font-family: 'Bai Jamjuree', sans-serif; color: rgb(255, 255, 255); ">link
+        Video Tutorial</p>
+    </a>
+
+
+  </div>
 
 </div>
-
-</div>
-
-
